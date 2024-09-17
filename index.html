@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+
+</head>
+
+<body>
+    <div class="nav-container">
+        <div class="navbar">
+            <a href="#" class="insta"> <img src="https://cdnlogo.com/logos/i/49/instagram.svg" class="insta-logo"
+                    alt=""></a>
+            <div class="search">
+                <input type="text" class="search-input" placeholder="Search">
+                <div class="search-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                    </svg>
+                </div>
+            </div>
+            <div class="nav-btn">
+                <button class="login">Log In</button>
+                <button class="signin">Sign Up</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="profile-container">
+        <div class="logo-container">
+            <div class="profile">
+                <img src="google.jpg" alt="" class="avatar">
+            </div>
+        </div>
+        <div class="profile-intro">
+            <div class="profile-details">
+                <div class="username-cls">
+                    <div class="follow">
+                        <h2 class="userid">google</h2>
+                        <div class="verified">
+                            <svg aria-label="Verified" class="x1lliihq x1n2onr6" fill="rgb(0, 149, 246)" height="18"
+                                role="img" viewBox="0 0 40 40" width="18">
+                                <title>Verified</title>
+                                <path
+                                    d="M19.998 3.094 14.638 0l-2.972 5.15H5.432v6.354L0 14.64 3.094 20 0 25.359l5.432 3.137v5.905h5.975L14.638 40l5.36-3.094L25.358 40l3.232-5.6h6.162v-6.01L40 25.359 36.905 20 40 14.641l-5.248-3.03v-6.46h-6.419L25.358 0l-5.36 3.094Zm7.415 11.225 2.254 2.287-11.43 11.5-6.835-6.93 2.244-2.258 4.587 4.581 9.18-9.18Z"
+                                    fill-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="profile-btn">
+                        <button class="follow-btn">Follow</button>
+                        <button class="follow-btn">Message</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div>
+                <ul class="prof-activity">
+                    <li class="activity-list">2534 posts</li>
+                    <li class="activity-list">15.2M followers</li>
+                    <li class="activity-list">34 following</li>
+                </ul>
+            </div>
+            <div class="bio">
+                <div class="name">
+                    Google
+                </div>
+                <div class="inst-thred">
+                    <a href="https://www.threads.net/@google?xmt=AQGzkMwWNh3CmJcao5mPRSVCBxuDHYryA53tEBoVJXSUr5k"
+                        role="link" tabindex="0" target="_blank" class="inst-thread-link">
+                        <div class="inst-thread-item">
+                            <svg aria-label="Threads" fill="currentColor" height="16"
+                                role="img" viewBox="0 0 192 192" width="16">
+                                <title>Threads</title>
+                                <path class="xcslo1z"
+                                    d="M141.537 88.9883C140.71 88.5919 139.87 88.2104 139.019 87.8451C137.537 60.5382 122.616 44.905 97.5619 44.745C97.4484 44.7443 97.3355 44.7443 97.222 44.7443C82.2364 44.7443 69.7731 51.1409 62.102 62.7807L75.881 72.2328C81.6116 63.5383 90.6052 61.6848 97.2286 61.6848C97.3051 61.6848 97.3819 61.6848 97.4576 61.6855C105.707 61.7381 111.932 64.1366 115.961 68.814C118.893 72.2193 120.854 76.925 121.825 82.8638C114.511 81.6207 106.601 81.2385 98.145 81.7233C74.3247 83.0954 59.0111 96.9879 60.0396 116.292C60.5615 126.084 65.4397 134.508 73.775 140.011C80.8224 144.663 89.899 146.938 99.3323 146.423C111.79 145.74 121.563 140.987 128.381 132.296C133.559 125.696 136.834 117.143 138.28 106.366C144.217 109.949 148.617 114.664 151.047 120.332C155.179 129.967 155.42 145.8 142.501 158.708C131.182 170.016 117.576 174.908 97.0135 175.059C74.2042 174.89 56.9538 167.575 45.7381 153.317C35.2355 139.966 29.8077 120.682 29.6052 96C29.8077 71.3178 35.2355 52.0336 45.7381 38.6827C56.9538 24.4249 74.2039 17.11 97.0132 16.9405C119.988 17.1113 137.539 24.4614 149.184 38.788C154.894 45.8136 159.199 54.6488 162.037 64.9503L178.184 60.6422C174.744 47.9622 169.331 37.0357 161.965 27.974C147.036 9.60668 125.202 0.195148 97.0695 0H96.9569C68.8816 0.19447 47.2921 9.6418 32.7883 28.0793C19.8819 44.4864 13.2244 67.3157 13.0007 95.9325L13 96L13.0007 96.0675C13.2244 124.684 19.8819 147.514 32.7883 163.921C47.2921 182.358 68.8816 191.806 96.9569 192H97.0695C122.03 191.827 139.624 185.292 154.118 170.811C173.081 151.866 172.51 128.119 166.26 113.541C161.776 103.087 153.227 94.5962 141.537 88.9883ZM98.4405 129.507C88.0005 130.095 77.1544 125.409 76.6196 115.372C76.2232 107.93 81.9158 99.626 99.0812 98.6368C101.047 98.5234 102.976 98.468 104.871 98.468C111.106 98.468 116.939 99.0737 122.242 100.233C120.264 124.935 108.662 128.946 98.4405 129.507Z">
+                                </path>
+                            </svg>
+                            <span>google</span>
+                        </div>
+                        
+
+                    </a>
+                </div>
+                <div class="company-details">
+                    <div class="int-company">
+                        Internet company
+                    </div>
+                    <div class="g-unfilter">
+                        Google unfiltered—sometimes with filters.
+                    </div>
+                    <div class="int-company">
+                        1600 Amphitheatre Pkwy, Mountain View, California 94043
+                    </div>
+                </div>
+                <div class="linkedin">
+                    <span>
+                        <svg aria-label="Link icon" class="x1lliihq x1n2onr6 x7l2uk3" fill="currentColor" height="12"
+                            role="img" viewBox="0 0 24 24" width="12">
+                            <title>Link icon</title>
+                            <path
+                                d="m9.726 5.123 1.228-1.228a6.47 6.47 0 0 1 9.15 9.152l-1.227 1.227m-4.603 4.603-1.228 1.228a6.47 6.47 0 0 1-9.15-9.152l1.227-1.227"
+                                fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2"></path>
+                            <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" x1="8.471" x2="15.529" y1="15.529" y2="8.471"></line>
+                        </svg>
+                    </span>
+                    <div class="lk-link">
+                        <a href="https://l.instagram.com/?u=https%3A%2F%2Flinkin.bio%2Fgoogle&amp;e=AT19p6eF7uh9zV7io38w-k1_MkmCdOMTMgcR2OOrDmfwrVtgdIPxI-juDckMlTN5j3kK7O6Fqeix2CYPEbUK6K9IOI1odZ1L"
+                            rel="me nofollow noopener noreferrer" target="_blank"><span
+                                class="x1lliihq x1plvlek xryxfnj x1n2onr6 x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye xvs91rp x1s688f x7l2uk3 x10wh9bi x1wdrske x8viiok x18hxmgj"
+                                dir="auto"
+                                style="line-height: var(--base-line-clamp-line-height); --base-line-clamp-line-height: 18px;"><span
+                                    class="x1lliihq x193iq5w x6ikm8r x10wlt62 xlyipyv xuxw1ft">linkin.bio/google</span></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="profile-theme">
+        <ul class="theme-flex">
+            <li class="theme-item">
+                <div class="theme-container">
+                    <img src="gemini.jpg" alt="" class="theme">
+                </div>
+                <div class="theme-id">
+                    Gemini
+                </div>
+            </li>
+            <li class="theme-item">
+                <div class="theme-container">
+                    <img src="ICYMI.jpg" alt="" class="theme">
+                </div>
+                <div class="theme-id">
+                    ICYMI
+                </div>
+            </li>
+            <li class="theme-item">
+                <div class="theme-container">
+                    <img src="red.jpg" alt="" class="theme">
+                </div>
+                <div class="theme-id">
+                    Red
+                </div>
+            </li>
+            <li class="theme-item">
+                <div class="theme-container">
+                    <img src="green.jpg" alt="" class="theme">
+                </div>
+                <div class="theme-id">
+                    Green
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="reels-grid">
+        <div class="actions">
+            <div class="action-item">
+                <svg aria-label="" class="x1lliihq x1n2onr6 x5n08af" fill="currentColor" height="12" role="img"
+                    viewBox="0 0 24 24" width="12">
+                    <title></title>
+                    <rect fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" width="18" x="3" y="3"></rect>
+                    <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" x1="9.015" x2="9.015" y1="3" y2="21"></line>
+                    <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" x1="14.985" x2="14.985" y1="3" y2="21"></line>
+                    <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" x1="21" x2="3" y1="9.015" y2="9.015"></line>
+                    <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" x1="21" x2="3" y1="14.985" y2="14.985"></line>
+                </svg> POSTS
+            </div>
+            <div class="action-item">
+                <svg aria-label="" class="x1lliihq x1n2onr6 x1roi4f4" fill="currentColor" height="12" role="img"
+                    viewBox="0 0 24 24" width="12">
+                    <title></title>
+                    <line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" x1="2.049"
+                        x2="21.95" y1="7.002" y2="7.002"></line>
+                    <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" x1="13.504" x2="16.362" y1="2.001" y2="7.002"></line>
+                    <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" x1="7.207" x2="10.002" y1="2.11" y2="7.002"></line>
+                    <path
+                        d="M2 12.001v3.449c0 2.849.698 4.006 1.606 4.945.94.908 2.098 1.607 4.946 1.607h6.896c2.848 0 4.006-.699 4.946-1.607.908-.939 1.606-2.096 1.606-4.945V8.552c0-2.848-.698-4.006-1.606-4.945C19.454 2.699 18.296 2 15.448 2H8.552c-2.848 0-4.006.699-4.946 1.607C2.698 4.546 2 5.704 2 8.552Z"
+                        fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2"></path>
+                    <path
+                        d="M9.763 17.664a.908.908 0 0 1-.454-.787V11.63a.909.909 0 0 1 1.364-.788l4.545 2.624a.909.909 0 0 1 0 1.575l-4.545 2.624a.91.91 0 0 1-.91 0Z"
+                        fill-rule="evenodd"></path>
+                </svg> REELS
+            </div>
+            <div class="action-item">
+                <svg aria-label="" class="x1lliihq x1n2onr6 x1roi4f4" fill="currentColor" height="12" role="img"
+                    viewBox="0 0 24 24" width="12">
+                    <title></title>
+                    <path
+                        d="M10.201 3.797 12 1.997l1.799 1.8a1.59 1.59 0 0 0 1.124.465h5.259A1.818 1.818 0 0 1 22 6.08v14.104a1.818 1.818 0 0 1-1.818 1.818H3.818A1.818 1.818 0 0 1 2 20.184V6.08a1.818 1.818 0 0 1 1.818-1.818h5.26a1.59 1.59 0 0 0 1.123-.465Z"
+                        fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2"></path>
+                    <path d="M18.598 22.002V21.4a3.949 3.949 0 0 0-3.948-3.949H9.495A3.949 3.949 0 0 0 5.546 21.4v.603"
+                        fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2"></path>
+                    <circle cx="12.072" cy="11.075" fill="none" r="3.556" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2"></circle>
+                </svg> TAGGED
+            </div>
+        </div>
+        <div class="card-group-container">
+
+            <a href="#" class="card-body-container">
+                <img src="flex-1.jpg" alt="" class="card-img">
+                <div class="tint"></div>
+                <div class="post-likes">
+                    <span><i class="bi bi-heart-fill"></i> 87.7k</span>
+                    <span><i class="bi bi-chat-fill"></i> 1,234</span>
+                </div>
+            </a>
+            <a href="#" class="card-body-container">
+                <img src="flex-2.jpg" alt="" class="card-img">
+                <div class="tint"></div>
+                <div class="post-likes">
+                    <span><i class="bi bi-heart-fill"></i> 87.7k</span>
+                    <span><i class="bi bi-chat-fill"></i> 1,234</span>
+                </div>
+            </a>
+            <a href="#" class="card-body-container">
+                <img src="flex-3.jpg" alt="" class="card-img">
+                <div class="tint"></div>
+                <div class="post-likes">
+                    <span><i class="bi bi-heart-fill"></i> 87.7k</span>
+                    <span><i class="bi bi-chat-fill"></i> 1,234</span>
+                </div>
+            </a>
+            <a href="#" class="card-body-container">
+                <img src="flex-4.jpg" alt="" class="card-img">
+                <div class="tint"></div>
+                <div class="post-likes">
+                    <span><i class="bi bi-heart-fill"></i> 87.7k</span>
+                    <span><i class="bi bi-chat-fill"></i> 1,234</span>
+                </div>
+            </a>
+            <a href="#" class="card-body-container">
+                <img src="flex-5.jpg" alt="" class="card-img">
+                <div class="tint"></div>
+                <div class="post-likes">
+                    <span><i class="bi bi-heart-fill"></i> 87.7k</span>
+                    <span><i class="bi bi-chat-fill"></i> 1,234</span>
+                </div>
+            </a>
+            <a href="#" class="card-body-container">
+                <img src="flex-6.jpg" alt="" class="card-img">
+                <div class="tint"></div>
+                <div class="post-likes">
+                    <span><i class="bi bi-heart-fill"></i> 87.7k</span>
+                    <span><i class="bi bi-chat-fill"></i> 1,234</span>
+                </div>
+            </a>
+            <a href="#" class="card-body-container">
+                <img src="flex-7.jfif" alt="" class="card-img">
+                <div class="tint"></div>
+                <div class="post-likes">
+                    <span><i class="bi bi-heart-fill"></i> 87.7k</span>
+                    <span><i class="bi bi-chat-fill"></i> 1,234</span>
+                </div>
+            </a>
+            <a href="#" class="card-body-container">
+                <img src="flex-8.jpg" alt="" class="card-img">
+                <div class="tint"></div>
+                <div class="post-likes">
+                    <span><i class="bi bi-heart-fill"></i> 87.7k</span>
+                    <span><i class="bi bi-chat-fill"></i> 1,234</span>
+                </div>
+            </a>
+            <a href="#" class="card-body-container">
+                <img src="flex-9.jfif" alt="" class="card-img">
+                <div class="tint"></div>
+                <div class="post-likes">
+                    <span><i class="bi bi-heart-fill"></i> 87.7k</span>
+                    <span><i class="bi bi-chat-fill"></i> 1,234</span>
+                </div>
+            </a>
+            <a href="#" class="card-body-container">
+                <img src="flex-10.jpg" alt="" class="card-img">
+                <div class="tint"></div>
+                <div class="post-likes">
+                    <span><i class="bi bi-heart-fill"></i> 87.7k</span>
+                    <span><i class="bi bi-chat-fill"></i> 1,234</span>
+                </div>
+            </a>
+            <a href="#" class="card-body-container">
+                <img src="flex-11.jpg" alt="" class="card-img">
+                <div class="tint"></div>
+                <div class="post-likes">
+                    <span><i class="bi bi-heart-fill"></i> 87.7k</span>
+                    <span><i class="bi bi-chat-fill"></i> 1,234</span>
+                </div>
+            </a>
+            <a href="#" class="card-body-container">
+                <img src="flex-12.jpg" alt="" class="card-img">
+                <div class="tint"></div>
+                <div class="post-likes">
+                    <span><i class="bi bi-heart-fill"></i> 87.7k</span>
+                    <span><i class="bi bi-chat-fill"></i> 1,234</span>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="related-act">
+        <div class="related-act-header">
+            <div class="header-text">
+                Related accounts
+            </div>
+            <div class="see-all">
+                See all
+            </div>
+        </div>
+
+        <div class="rel-act-card-container">
+            <div class="rel-act-card-body">
+                <a href="#" class="rel-act-card-link">
+                    <img src="https://images.unsplash.com/photo-1557862921-37829c790f19?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="" class="rel-act-card-img">
+                </a>
+
+                <div class="rel-act-user-profile">
+                    <div class="rel-act-userid">
+                        mrwhosetheboss <span><svg aria-label="Verified" class="x1lliihq x1n2onr6"
+                                fill="rgb(0, 149, 246)" height="12" role="img" viewBox="0 0 40 40" width="12">
+                                <title>Verified</title>
+                                <path
+                                    d="M19.998 3.094 14.638 0l-2.972 5.15H5.432v6.354L0 14.64 3.094 20 0 25.359l5.432 3.137v5.905h5.975L14.638 40l5.36-3.094L25.358 40l3.232-5.6h6.162v-6.01L40 25.359 36.905 20 40 14.641l-5.248-3.03v-6.46h-6.419L25.358 0l-5.36 3.094Zm7.415 11.225 2.254 2.287-11.43 11.5-6.835-6.93 2.244-2.258 4.587 4.581 9.18-9.18Z"
+                                    fill-rule="evenodd"></path>
+                            </svg></span>
+                    </div>
+                    <div class="rel-act-username">
+                        Arun Maini
+                    </div>
+                </div>
+                <button class="follow-btn">
+                    Follow
+                </button>
+            </div>
+
+            <div class="rel-act-card-body">
+                <a href="#" class="rel-act-card-link">
+                    <img src="https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="" class="rel-act-card-img">
+                </a>
+
+                <div class="rel-act-user-profile">
+                    <div class="rel-act-userid">
+                        real_rakesh <span><svg aria-label="Verified" class="x1lliihq x1n2onr6" fill="rgb(0, 149, 246)"
+                                height="12" role="img" viewBox="0 0 40 40" width="12">
+                                <title>Verified</title>
+                                <path
+                                    d="M19.998 3.094 14.638 0l-2.972 5.15H5.432v6.354L0 14.64 3.094 20 0 25.359l5.432 3.137v5.905h5.975L14.638 40l5.36-3.094L25.358 40l3.232-5.6h6.162v-6.01L40 25.359 36.905 20 40 14.641l-5.248-3.03v-6.46h-6.419L25.358 0l-5.36 3.094Zm7.415 11.225 2.254 2.287-11.43 11.5-6.835-6.93 2.244-2.258 4.587 4.581 9.18-9.18Z"
+                                    fill-rule="evenodd"></path>
+                            </svg></span>
+                    </div>
+                    <div class="rel-act-username">
+                        Rakesh Bagul
+                    </div>
+                </div>
+                <button class="follow-btn">
+                    Follow
+                </button>
+            </div>
+            <div class="rel-act-card-body">
+                <a href="#" class="rel-act-card-link">
+                    <img src="https://images.unsplash.com/photo-1482961674540-0b0e8363a005?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="" class="rel-act-card-img">
+                </a>
+
+                <div class="rel-act-user-profile">
+                    <div class="rel-act-userid">
+                        i_am_nick <span><svg aria-label="Verified" class="x1lliihq x1n2onr6" fill="rgb(0, 149, 246)"
+                                height="12" role="img" viewBox="0 0 40 40" width="12">
+                                <title>Verified</title>
+                                <path
+                                    d="M19.998 3.094 14.638 0l-2.972 5.15H5.432v6.354L0 14.64 3.094 20 0 25.359l5.432 3.137v5.905h5.975L14.638 40l5.36-3.094L25.358 40l3.232-5.6h6.162v-6.01L40 25.359 36.905 20 40 14.641l-5.248-3.03v-6.46h-6.419L25.358 0l-5.36 3.094Zm7.415 11.225 2.254 2.287-11.43 11.5-6.835-6.93 2.244-2.258 4.587 4.581 9.18-9.18Z"
+                                    fill-rule="evenodd"></path>
+                            </svg></span>
+                    </div>
+                    <div class="rel-act-username">
+                        Nick Joseph
+                    </div>
+                </div>
+                <button class="follow-btn">
+                    Follow
+                </button>
+            </div>
+            <div class="rel-act-card-body">
+                <a href="#" class="rel-act-card-link">
+                    <img src="https://images.unsplash.com/photo-1579038773867-044c48829161?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="" class="rel-act-card-img">
+                </a>
+
+                <div class="rel-act-user-profile">
+                    <div class="rel-act-userid">
+                        bshimpi <span><svg aria-label="Verified" class="x1lliihq x1n2onr6" fill="rgb(0, 149, 246)"
+                                height="12" role="img" viewBox="0 0 40 40" width="12">
+                                <title>Verified</title>
+                                <path
+                                    d="M19.998 3.094 14.638 0l-2.972 5.15H5.432v6.354L0 14.64 3.094 20 0 25.359l5.432 3.137v5.905h5.975L14.638 40l5.36-3.094L25.358 40l3.232-5.6h6.162v-6.01L40 25.359 36.905 20 40 14.641l-5.248-3.03v-6.46h-6.419L25.358 0l-5.36 3.094Zm7.415 11.225 2.254 2.287-11.43 11.5-6.835-6.93 2.244-2.258 4.587 4.581 9.18-9.18Z"
+                                    fill-rule="evenodd"></path>
+                            </svg></span>
+                    </div>
+                    <div class="rel-act-username">
+                        Bhagyesh Shimpi
+                    </div>
+                </div>
+                <button class="follow-btn">
+                    Follow
+                </button>
+            </div>
+            <div class="rel-act-card-body">
+                <a href="#" class="rel-act-card-link">
+                    <img src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="" class="rel-act-card-img">
+                </a>
+
+                <div class="rel-act-user-profile">
+                    <div class="rel-act-userid">
+                        yogesh_coder <span><svg aria-label="Verified" class="x1lliihq x1n2onr6" fill="rgb(0, 149, 246)"
+                                height="12" role="img" viewBox="0 0 40 40" width="12">
+                                <title>Verified</title>
+                                <path
+                                    d="M19.998 3.094 14.638 0l-2.972 5.15H5.432v6.354L0 14.64 3.094 20 0 25.359l5.432 3.137v5.905h5.975L14.638 40l5.36-3.094L25.358 40l3.232-5.6h6.162v-6.01L40 25.359 36.905 20 40 14.641l-5.248-3.03v-6.46h-6.419L25.358 0l-5.36 3.094Zm7.415 11.225 2.254 2.287-11.43 11.5-6.835-6.93 2.244-2.258 4.587 4.581 9.18-9.18Z"
+                                    fill-rule="evenodd"></path>
+                            </svg></span>
+                    </div>
+                    <div class="rel-act-username">
+                        Yogesh B
+                    </div>
+                </div>
+                <button class="follow-btn">
+                    Follow
+                </button>
+            </div>
+            <div class="rel-act-card-body">
+                <a href="#" class="rel-act-card-link">
+                    <img src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="" class="rel-act-card-img">
+                </a>
+
+                <div class="rel-act-user-profile">
+                    <div class="rel-act-userid">
+                        yogesh_coder <span><svg aria-label="Verified" class="x1lliihq x1n2onr6" fill="rgb(0, 149, 246)"
+                                height="12" role="img" viewBox="0 0 40 40" width="12">
+                                <title>Verified</title>
+                                <path
+                                    d="M19.998 3.094 14.638 0l-2.972 5.15H5.432v6.354L0 14.64 3.094 20 0 25.359l5.432 3.137v5.905h5.975L14.638 40l5.36-3.094L25.358 40l3.232-5.6h6.162v-6.01L40 25.359 36.905 20 40 14.641l-5.248-3.03v-6.46h-6.419L25.358 0l-5.36 3.094Zm7.415 11.225 2.254 2.287-11.43 11.5-6.835-6.93 2.244-2.258 4.587 4.581 9.18-9.18Z"
+                                    fill-rule="evenodd"></path>
+                            </svg></span>
+                    </div>
+                    <div class="rel-act-username">
+                        Yogesh B
+                    </div>
+                </div>
+                <button class="follow-btn">
+                    Follow
+                </button>
+            </div>
+
+            <div class="rel-act-card-body">
+                <a href="#" class="rel-act-card-link">
+                    <img src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="" class="rel-act-card-img">
+                </a>
+
+                <div class="rel-act-user-profile">
+                    <div class="rel-act-userid">
+                        yogesh_coder <span><svg aria-label="Verified" class="x1lliihq x1n2onr6" fill="rgb(0, 149, 246)"
+                                height="12" role="img" viewBox="0 0 40 40" width="12">
+                                <title>Verified</title>
+                                <path
+                                    d="M19.998 3.094 14.638 0l-2.972 5.15H5.432v6.354L0 14.64 3.094 20 0 25.359l5.432 3.137v5.905h5.975L14.638 40l5.36-3.094L25.358 40l3.232-5.6h6.162v-6.01L40 25.359 36.905 20 40 14.641l-5.248-3.03v-6.46h-6.419L25.358 0l-5.36 3.094Zm7.415 11.225 2.254 2.287-11.43 11.5-6.835-6.93 2.244-2.258 4.587 4.581 9.18-9.18Z"
+                                    fill-rule="evenodd"></path>
+                            </svg></span>
+                    </div>
+                    <div class="rel-act-username">
+                        Yogesh B
+                    </div>
+                </div>
+                <button class="follow-btn">
+                    Follow
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer-section">
+        <div class="footer-menu">
+            <a href="#" class="footer-item">Meta</a>
+            <a href="#" class="footer-item">About</a>
+            <a href="#" class="footer-item">Blog</a>
+            <a href="#" class="footer-item">Jobs</a>
+            <a href="#" class="footer-item">Help</a>
+            <a href="#" class="footer-item">API</a>
+            <a href="#" class="footer-item">Privacy</a>
+            <a href="#" class="footer-item">Terms</a>
+            <a href="#" class="footer-item">Location</a>
+            <a href="#" class="footer-item">Instagram lite</a>
+            <a href="#" class="footer-item">Threads</a>
+            <a href="#" class="footer-item">Contact Uploading & Non-Users</a>
+            <a href="#" class="footer-item">Meta verified</a>
+        </div>
+        <div class="copyright-section">
+            <div class="lang">English</div>
+            <div class="cpright">© 2024 Instagram from Meta</div>
+        </div>
+    </div>
+</body>
+
+</html>
